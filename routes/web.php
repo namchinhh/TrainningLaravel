@@ -47,3 +47,7 @@ Route::get('sendemail', function () {
 });
 Route::post('/comment', 'CommentsController@newComment');
 
+Route::get('users/register', 'Auth\RegisterController@showRegistrationForm');
+Route::post('users/register', 'Auth\RegisterController@register');
+Route::get('home', 'PagesController@home');
+
